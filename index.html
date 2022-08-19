@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Compating different devices and applicatons -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!-- Title bar -->
+	<title>Sudoku</title>
+	<link rel = "icon" type = "image/png" href = "stock/title-icon.jpg">
+
+	<!-- Style sheet -->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<!-- Adobe fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/oyy6bsf.css">
+
+	<!-- jQuery files include -->
+	<script src="jQuery\jQuery compressed.js"></script>
+	<script src="jQuery\jquery-ui.js"></script>
+	<script src="jQuery\jQuery ease1.js"></script>
+	<script src="jQuery\jQuery ease2.js"></script>
+
+	<!-- Javascript file -->
+	<script type="text/javascript" src="effect.js"></script>
+</head>
+
+<body class="current-page" id="home">
+
+    <div id="navbar">
+        <img src="stock/title-icon.jpg" id="navbar-logo">
+		<div id="navbar-head"><p>Sudoku</p></div>
+		<div id="navbar-list">
+			<a href="index.html" class="navbar-links" id="navbar-home">
+				<div class="navbar-menus">HOME</div>								
+			</a>						
+			<a href="solution.html" class="navbar-links" id="navbar-solution">
+				<div class="navbar-menus">SOLUTION</div>				
+			</a>
+			<a href="practice.html" class="navbar-links" id="navbar-practice">
+				<div class="navbar-menus">PRACTICE</div>				
+			</a>						
+		</div>		
+		<div id="mobnavbar-button">
+			<div class="bar1"></div> <div class="bar2"></div> <div class="bar3"></div>
+		</div>
+		<div id="mobnavbar-list-container">
+			<ul id="mobnavbar-list">
+				<li class="mobnavbar-list-items"><a href="index.html" class="mobnavbar-links">HOME</a></li>
+				<li class="mobnavbar-list-items"><a href="solution.html" class="mobnavbar-links">SOLUTION</a></li>
+				<li class="mobnavbar-list-items"><a href="practice.html" class="mobnavbar-links">PRACTICE</a></li>			
+			</ul>
+		</div>						
+	</div>
+
+    <div id="entry-template">
+        <div id="entry-container">
+			<a href="solution.html" class="blocks-links">
+				<div class="entry-blocks">
+					<p class="blocks-heads">Solution :</p>
+					<p class="blocks-texts">Enter the question and get the solution for the sudoku puzzle by a click</p>
+				</div>
+			</a>            
+			<a href="practice.html" class="blocks-links">
+				<div class="entry-blocks">
+					<p class="blocks-heads">Practice :</p>
+					<p class="blocks-texts">Enter the question, start filling manually, and check whether the number is right.</p>
+				</div>
+			</a>            
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Compating different devices and applicatons -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!-- Title bar -->
+	<title>Solution | Sudoku</title>
+	<link rel = "icon" type = "image/png" href = "stock/title-icon.jpg">
+
+	<!-- Style sheet -->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<!-- Adobe fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/oyy6bsf.css">
+
+	<!-- jQuery files include -->
+	<script src="jQuery\jQuery compressed.js"></script>
+	<script src="jQuery\jquery-ui.js"></script>
+	<script src="jQuery\jQuery ease1.js"></script>
+	<script src="jQuery\jQuery ease2.js"></script>
+
+	<!-- Javascript file -->
+	<script type="text/javascript" src="effect.js"></script>
+    <script type="text/javascript" src="effect-solution.js"></script>
+</head>
+
+<body class="current-page" id="solution">
+
+    <div id="navbar">
+        <img src="stock/title-icon.jpg" id="navbar-logo">
+		<div id="navbar-head"><p>Sudoku</p></div>
+		<div id="navbar-list">
+			<a href="index.html" class="navbar-links" id="navbar-home">
+				<div class="navbar-menus">HOME</div>								
+			</a>						
+			<a href="solution.html" class="navbar-links" id="navbar-solution">
+				<div class="navbar-menus">SOLUTION</div>				
+			</a>
+			<a href="practice.html" class="navbar-links" id="navbar-practice">
+				<div class="navbar-menus">PRACTICE</div>				
+			</a>						
+		</div>		
+		<div id="mobnavbar-button">
+			<div class="bar1"></div> <div class="bar2"></div> <div class="bar3"></div>
+		</div>
+		<div id="mobnavbar-list-container">
+			<ul id="mobnavbar-list">
+				<li class="mobnavbar-list-items"><a href="index.html" class="mobnavbar-links">HOME</a></li>
+				<li class="mobnavbar-list-items"><a href="solution.html" class="mobnavbar-links">SOLUTION</a></li>
+				<li class="mobnavbar-list-items"><a href="practice.html" class="mobnavbar-links">PRACTICE</a></li>			
+			</ul>
+		</div>						
+	</div>
+
+	<div id="solution-header">
+		<p id="solution-header-text">Enter the question puzzle, and click "Submit" to get the solution.</p>
+	</div>
+
+	<div id="sudoku-container">
+		<form id="sudoku-table-form">	
+			<div id="sudoku-table-container">		
+				<table id="sudoku-table">
+					<tr id="sudoku-table-rows">
+						<td class="sudoku-table-blocks">
+							<table class="sudoku-small-tables">
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-1" id="num-1" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-2" id="num-2" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-3" id="num-3" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-10" id="num-10" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-11" id="num-11" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-12" id="num-12" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-19" id="num-19" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-20" id="num-20" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-21" id="num-21" class="nums" maxlength="1" /> </td>
+								</tr>
+							</table>
+						</td>
+						
+						<td class="sudoku-table-blocks">
+							<table class="sudoku-small-tables">
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-4" id="num-4" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-5" id="num-5" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-6" id="num-6" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-13" id="num-13" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-14" id="num-14" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-15" id="num-15" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-22" id="num-22" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-23" id="num-23" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-24" id="num-24" class="nums" maxlength="1" /> </td>
+								</tr>
+							</table>
+						</td>
+	
+						<td class="sudoku-table-blocks">
+							<table class="sudoku-small-tables">
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-7" id="num-7" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-8" id="num-8" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-9" id="num-9" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-16" id="num-16" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-17" id="num-17" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-18" id="num-18" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-25" id="num-25" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-26" id="num-26" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-27" id="num-27" class="nums" maxlength="1" /> </td>
+								</tr>
+							</table>
+						</td>					
+					</tr>
+					<tr id="sudoku-table-rows">
+						<td class="sudoku-table-blocks">
+							<table class="sudoku-small-tables">
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-28" id="num-28" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-29" id="num-29" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-30" id="num-30" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-37" id="num-37" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-38" id="num-38" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-39" id="num-39" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-46" id="num-46" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-47" id="num-47" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-48" id="num-48" class="nums" maxlength="1" /> </td>
+								</tr>
+							</table>
+						</td>
+						
+						<td class="sudoku-table-blocks">
+							<table class="sudoku-small-tables">
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-31" id="num-31" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-32" id="num-32" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-33" id="num-33" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-40" id="num-40" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-41" id="num-41" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-42" id="num-42" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-49" id="num-49" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-50" id="num-50" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-51" id="num-51" class="nums" maxlength="1" /> </td>
+								</tr>
+							</table>
+						</td>
+	
+						<td class="sudoku-table-blocks">
+							<table class="sudoku-small-tables">
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-34" id="num-34" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-35" id="num-35" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-36" id="num-36" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-43" id="num-43" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-44" id="num-44" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-45" id="num-45" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-52" id="num-52" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-53" id="num-53" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-54" id="num-54" class="nums" maxlength="1" /> </td>
+								</tr>
+							</table>
+						</td>					
+					</tr>
+					<tr id="sudoku-table-rows">
+						<td class="sudoku-table-blocks">
+							<table class="sudoku-small-tables">
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-55" id="num-55" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-56" id="num-56" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-57" id="num-57" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-64" id="num-64" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-65" id="num-65" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-66" id="num-66" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-73" id="num-73" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-74" id="num-74" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-75" id="num-75" class="nums" maxlength="1" /> </td>
+								</tr>
+							</table>
+						</td>
+						
+						<td class="sudoku-table-blocks">
+							<table class="sudoku-small-tables">
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-58" id="num-58" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-59" id="num-59" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-60" id="num-60" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-67" id="num-67" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-68" id="num-68" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-69" id="num-69" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-76" id="num-76" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-77" id="num-77" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-78" id="num-78" class="nums" maxlength="1" /> </td>
+								</tr>
+							</table>
+						</td>
+	
+						<td class="sudoku-table-blocks">
+							<table class="sudoku-small-tables">
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-61" id="num-61" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-62" id="num-62" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-63" id="num-63" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-70" id="num-70" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-71" id="num-71" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-72" id="num-72" class="nums" maxlength="1" /> </td>
+								</tr>
+								<tr class="sudoku-small-table-rows">
+									<td class="blocks"> <input type="number" name="num-79" id="num-79" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-80" id="num-80" class="nums" maxlength="1" /> </td>
+									<td class="blocks"> <input type="number" name="num-81" id="num-81" class="nums" maxlength="1" /> </td>
+								</tr>
+							</table>
+						</td>					
+					</tr>				
+				</table>			
+			</div>
+	
+			<div id="buttons-container"> 
+				<button type="button" id="submit" class="buttons">Submit</button>
+				<button type="button" id="clear" class="buttons">Clear</button>
+			</div>
+				
+		</form>
+	</div>	
+
+	<div id="footer"></div>
+</body>
+
+</html>
